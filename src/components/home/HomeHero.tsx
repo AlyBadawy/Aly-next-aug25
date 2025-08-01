@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ScrambleText } from "../ScrambleText";
+import AlyPicture from "@/assets/images/aly-badawy-profile.jpg";
 
 export const HomeHero = () => {
   return (
@@ -64,10 +65,9 @@ export const HomeHero = () => {
             </a>
           </div>
         </div>
-        {/* IMAGE + SECONDARY CTA */}
         <div className="col-span-2 mx-auto flex flex-col justify-between items-center align-middle">
           <Image
-            src="/home-aly-pic.jpeg"
+            src={AlyPicture}
             alt="Aly Badawy profile"
             className="hidden lg:inline-block w-full max-w-sm md:max-w-md h-auto rounded-xl  shadow-blue-950 shadow-sm"
             data-aos="fade-left"
@@ -75,12 +75,6 @@ export const HomeHero = () => {
             height={800}
             priority
           />
-          <button
-            className="mt-8 p-3 border-2 rounded-lg text-zinc-300 border-zinc-400 cursor-pointer hover:bg-zinc-700 transition-colors duration-200"
-            data-aos="zoom-in"
-          >
-            <ScrambleText text="View My Work" delay={400} start={1500} />
-          </button>
         </div>
       </div>
     </div>
