@@ -1,6 +1,7 @@
 import logo from "@/assets/images/logo.svg";
 import { HeaderNav } from "./HeaderNav";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -8,9 +9,9 @@ export const Header = () => {
       <div className="container mx-auto p-4">
         <div className="flex flex-row justify-between items-center">
           <div className="w-28 sm:w-40 mr-2">
-            <a href="/">
+            <Link href="/">
               <Image src={logo} alt="Aly Badawy" />
-            </a>
+            </Link>
           </div>
           <HeaderNav />
         </div>

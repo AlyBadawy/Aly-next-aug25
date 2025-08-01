@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export const Footer = () => {

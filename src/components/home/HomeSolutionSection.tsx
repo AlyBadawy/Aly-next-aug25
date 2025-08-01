@@ -22,7 +22,7 @@ export const HomeSolutionSection = () => {
                   My passion lies at the intersection of software development
                   and DevSecOps— building applications that are not only
                   functional and performant, but also secure, scalable, and
-                  resilient. I’m driven by the challenge of creating seamless
+                  resilient. I'm driven by the challenge of creating seamless
                   user experiences while ensuring the systems behind them are
                   built with security and automation from the ground up.
                 </p>

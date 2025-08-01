@@ -10,6 +10,7 @@ type ScrambleTextProps = {
 export const ScrambleText = ({ text, start, delay }: ScrambleTextProps) => {
   const ref = useRef(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const b = baffle(ref.current);
     b.set({
@@ -17,8 +18,8 @@ export const ScrambleText = ({ text, start, delay }: ScrambleTextProps) => {
       speed: 25,
     });
     b.start();
-    // You can control when to reveal (e.g., with Intersection Observer)
-    setTimeout(() => b.reveal(start ?? 1500), delay ?? 20); // Reveal over 800ms after 20ms
+
+    setTimeout(() => b.reveal(start ?? 1500), delay ?? 20);
     return () => {
       if (b) {
         b.stop();
