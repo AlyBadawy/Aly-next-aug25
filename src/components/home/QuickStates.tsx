@@ -17,7 +17,7 @@ export const QuickStats = () => {
                 key={i}
                 className="flex flex-col items-center bg-zinc-900 border border-zinc-700 rounded-lg p-6 w-40 shadow-md"
                 data-aos="zoom-in"
-                data-aos-delay={i * 75}
+                data-aos-delay={i * 150}
               >
                 <span className="text-4xl mb-2">{stat.icon}</span>
                 <span className="text-3xl font-bold text-cyan-300">
